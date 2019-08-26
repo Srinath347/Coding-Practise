@@ -1,0 +1,30 @@
+
+ There are many questions that needs to be answered before diving into programming,
+                like....
+                       1. what is a program?
+                       2. How is a program executed? (ans is for Java program explicitly)
+                       3. what are all the components that are involved in execution of a program?
+
+  let's answer these questions one by one.
+
+  1. Program :
+       A program is a collection of instructions that performs a specific task when executed.
+       A program is written by  a computer programmer in a programming language.
+
+  2. How is a program executed?
+       In Java, programs are not compiled into executable files, they are compiled into bytecode when we use the javac compiler,
+       which the Java Virtual Machine(JVM) then executes at runtime. The bytecode gets saved on the disk with as .class file.
+       When the program is to be run, the bytecode is converted, using the just-in-time (JIT) compiler.
+       The result is machine code which is then fed to the memory and is executed.
+
+       Java code needs to be compiled twice in order to be executed:
+         i) Java programs need to be compiled to bytecode. (Compile time)
+         ii) When the bytecode is run, it needs to be converted to machine code. (Run time).
+
+  3. what are all components that are involved in execution of a program?
+
+       i)   Processor
+       ii)  RAM
+       iii) Hard disk
+       iV)  System Architecture
+       V)   GPU
