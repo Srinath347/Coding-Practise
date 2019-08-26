@@ -1,0 +1,48 @@
+Before diving into Bit_Manipulations lets learn few concepts here,
+
+Important to learn the data types and their storage capacities
+
+    S.No     Data types           size
+     1.       int               4 Bytes (32 bits)
+     2.       long              8 Bytes (64 bits)
+     3.       char              1 Byte  (8 bits)
+     4.       boolean           1 Byte  (8 bits)
+     5.       short             2 Byte  (16 bits)
+     6.       double            8 Byte  (64 bits)
+
+   ** So every integer declared is stored as in 32 bit binary representation internally.
+      MSB in integer (i.e., 31st bit is saved for signed/unsigned representation)
+
+Important concepts to understand :
+      how to convert +x to -x ?
+      Example : convert 18 to -18
+                18 in binary  00010010
+                -18 can be formed by getting the 1's complement of 18 and adding 1 to it.
+                1's complement can be obtained by inverting 0's and 1's.
+                1's complement of 18 (11101101)
+                adding 1 to it gives (11101110)
+                -18  =  1110111
+
+     lets have a look at the operators available for us
+         S.No      Types           Operators
+          1.     Arithmetic      + , - , * , / , %
+          2.     Relational      == , != , < , <= , > , >=
+          3.     Logical         && , || ,
+          4.     Bitwise         & , | , ^ , ~ , << , >>
+          5.     Ternery         ?:
+
+     So bitwise operators we will be using are &, | , ^ , ~ , << , >>
+       lets assume we have an integer a.
+        1. a & 0  gives 0
+        2. a & 1  gives 0 if a is even, 1 if a is odd
+        3. a & a  gives a
+        4. a | 0  gives a
+        5. a | 1  gives a if a is even , a+1 if a is odd
+        6. a | a  gives a
+        7. a ^ 0  gives a
+        8. a ^ 1  gives a+1 if a is even, a-1 if odd
+        9. a ^ a  gives 0
+
+        10. a << b gives a * (2 power b)
+        11. a >> b gives a / (2 power b)
+
