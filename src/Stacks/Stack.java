@@ -1,11 +1,15 @@
 package Stacks;
 
+/*
+ * Implement Stack Data structure using Array
+ */
 public class Stack {
 
     private int top = -1;
     private int[] arr;
 
     Stack(int max) {
+        top = -1;
         arr = new int[max];
     }
 
