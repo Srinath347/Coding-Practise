@@ -54,15 +54,17 @@ public class LinkedList {
     void print() {
         Node curr = head;
         System.out.println("**********");
-        while(curr!=null) {
+        while(curr != null) {
             System.out.print(curr.data+" ");
             curr = curr.next;
         }
         System.out.println();
         System.out.println("**********");
     }
+
     private Node del(Node head, int pos) {
-        if(pos>size) {
+
+        if(pos > size) {
             return head;
         }
         size--;
@@ -70,7 +72,7 @@ public class LinkedList {
             return head.next;
         }
         Node curr = head;
-        while(pos>1 && curr.next!=null) {
+        while(pos > 1 && curr.next != null) {
             curr = curr.next;
             pos--;
         }
@@ -81,7 +83,7 @@ public class LinkedList {
     private Node reverseLL(Node head) {
         Node prev = null;
         Node next = head;
-        while(head!=null) {
+        while(head != null) {
             next = head.next;
             head.next = prev;
             prev = head;
@@ -91,12 +93,13 @@ public class LinkedList {
     }
 
     private Node append(Node head, int data) {
+
         if(head == null) {
             return new Node(data);
         }
         Node curr = head;
         Node newNode = new Node(data);
-        while(curr.next!=null) {
+        while(curr.next != null) {
             curr = curr.next;
         }
         curr.next = newNode;
@@ -104,6 +107,7 @@ public class LinkedList {
     }
 
     private Node prepend(Node head, int data) {
+
         Node newNode = new Node(data);
         newNode.next = head;
         head = newNode;
@@ -111,7 +115,8 @@ public class LinkedList {
     }
 
     private Node insert(Node head, int data, int pos) {
-        if(pos>size) {
+
+        if(pos > size) {
             return head;
         }
         if(pos == 0) {
@@ -119,7 +124,7 @@ public class LinkedList {
         }
         Node curr = head;
         Node newNode = new Node(data);
-        while(pos>1 && curr.next!=null) {
+        while(pos > 1 && curr.next != null) {
             curr = curr.next;
             pos--;
         }
