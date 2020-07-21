@@ -1,6 +1,6 @@
 Before diving into Bit_Manipulations lets learn few concepts here,
 
-Important to learn the data types and their storage capacities
+data types and their storage capacities
 
     S.No     Data types           size
      1.       int               4 Bytes (32 bits)
