@@ -17,13 +17,13 @@ public class InsertionSort {
     // Insertion sort implementation
     private static void sort(int[] arr,int n) {
         for(int i=1;i<n;i++) {
-           int val = arr[i];
-           int j = i-1;
-           while(j>=0 && arr[j]>val) {
-               arr[j+1] = arr[j];
-               j--;
-           }
-           arr[j+1]= val;
+            int v = arr[i];
+            int j = i-1;
+            while(j >=0 && arr[j] > v) {
+                arr[j+1] = arr[j];
+                j--;
+            }
+            arr[j+1] = v;
         }
     }
 

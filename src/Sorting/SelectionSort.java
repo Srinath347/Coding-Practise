@@ -19,15 +19,13 @@ public class SelectionSort {
         for(int i=0;i<n;i++) {
             int min = arr[i];
             int idx = i;
-            for(int j= i+1;j<n;j++) {
-                if(arr[j]<min) {
+            for(int j = i+1; j<n;j++) {
+                if(arr[j] < min) {
                     min = arr[j];
                     idx = j;
                 }
             }
-            if(idx!=i) {
-                swap(arr,i,idx);
-            }
+            swap(arr, i,idx);
         }
     }
 

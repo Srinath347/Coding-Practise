@@ -1,7 +1,7 @@
 package Bit_Manipulation;
 import java.util.*;
 
-/* Problem Statement : Given a number N and a position i, check weather ith bit is set/not-set in N.
+/* Problem Statement : Given a number N and a position i, check whether ith bit is set/not-set in N.
    Input : N = 7 , i = 2 ; N = 16 , i = 2 .
    Output: true ; false .
    Explanation : N = 7   0111 , here 0th, 1st and 2nd bit are set and i = 2 hence return true.
